@@ -1,9 +1,8 @@
+
 *
 {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-
-
 }
 
 
@@ -31,10 +30,35 @@
 {
     transform: translate(-43%,-1%) scale(1);
 }
-.body
+.container
 {
     max-width: 2054px;
-    margin: 245px 150px;
+    margin: 153px 150px;
+}
+
+.container__brain
+{
+    display: flex;
+    gap: 258px;
+}
+.brain-info
+{
+    display: flex;
+    position: absolute;
+    gap: 480px;
+    left: 40%;
+    top: 6%;
+}
+.brain-info__text
+{
+    color: #313E80;
+    line-height: 1.2;
+    font-size: clamp(14px, 2vw, 40px);
+}
+.brain_images
+{
+    display: flex;
+    gap: 10px;
 }
 .text
 {
@@ -43,7 +67,34 @@
     opacity: 0;
     animation: fadeIn 2s ease forwards;
     font-size: clamp(14px, 2vw, 45px);
+    max-width: 791px;
+    margin-bottom: 114px;
 }
+.portraits
+{
+    display: flex;
+}
+.portrait
+{
+    position: relative;
+}
+.portrait__date
+{
+    background: transparent;
+    background-image: url("../images/slide02/date_background.png");
+    border: none;
+    background-size: contain;
+    width: 184px;
+    height: 69px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: -35px;
+}
+
+
 .footer 
 {
     position: absolute;
@@ -59,11 +110,18 @@
     padding: 55px 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+.footer_icons
+{
+    display: flex;
+    gap: 64px;
 }
 .footer_text
 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: white;
     padding: 0;
     margin: 0;
