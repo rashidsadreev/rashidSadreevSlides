@@ -33,6 +33,10 @@
     display: flex;
     gap: 271px;
 }
+.artozan_img
+{
+    animation: imageAppear 4s;
+}
 
 .title
 {
@@ -40,6 +44,8 @@
     color: #20336E;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 600; 
+    animation: fadeIn 4s;
+
 }
 .footer 
 {
@@ -67,5 +73,9 @@
 
 @keyframes fadeIn {
   from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes imageAppear {
+  from { transform: translateX(100%); }
   to   { opacity: 1; }
 }

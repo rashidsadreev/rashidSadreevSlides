@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slide00</title>
+    <title>slide02</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -12,11 +12,10 @@
 
 </head>
 <body>
-    <div class="slide slide_00">
-        <div class="head">
-
-        </div>
-        <div class="container ">
+    <div class="slide slide_02">
+        <div class="head"></div>
+        <h1 class="title"></h1>
+        <div class="container">
             <div class="container__brain">
                 <p class="text">
                     В 1995 году американский художник Уильям Утермолен (William Utermohlen) узнал, 
@@ -45,27 +44,27 @@
             </div>
             <div class="portraits">
                 <div class="portrait">
-                    <img src="images/slide02/portrait.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait.png" id="portrait-1" class="portait__img" alt="">
                     <button class="portrait__date">1967</button>
                 </div>
                 <div class="portrait">
-                    <img src="images/slide02/portrait_1996.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait_1996.png" id="portrait-2" class="portait__img" alt="">
                     <button class="portrait__date">1996</button>
                 </div>
                 <div class="portrait">
-                    <img src="images/slide02/portrait_1997.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait_1997.png" id="portrait-3" class="portait__img" alt="">
                     <button class="portrait__date">1997</button>
                 </div>
                 <div class="portrait">
-                    <img src="images/slide02/portrait_1998.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait_1998.png" id="portrait-4" class="portait__img" alt="">
                     <button class="portrait__date">1998</button>
                 </div>
                 <div class="portrait">
-                    <img src="images/slide02/portrait_1999.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait_1999.png" id="portrait-5" class="portait__img" alt="">
                     <button class="portrait__date">1999</button>
                 </div>
                 <div class="portrait">
-                    <img src="images/slide02/portrait_2000.png" class="portait__img" alt="">
+                    <img src="images/slide02/portrait_2000.png" id="portrait-6" class="portait__img" alt="">
                     <button class="portrait__date">2000</button>
                 </div>
             </div>
@@ -78,12 +77,20 @@
             <div class="footer_container">
                 <p class="footer_text">Деменция. Болезнь Альцгеймера</p>
                 <div class="footer_icons">
-                    <img src="images/slide02/home_button.svg" alt="" class="home_btn">
+                    <a href="slide00.html"><img src="images/slide02/home_button.svg" alt="" class="home_btn"></a>
                     <img src="images/slide02/info_button.svg" alt="" class="info_btn">
                 </div>
             </div>
         </div>
+        <div class="popup">
+            <div class="popup_body" id="popup_info">
+                <div class="popup_close"></div>
+                <div class="popup_text">
+                    <a href="https://kulturologia.ru/blogs/141112/17392/">Автопортреты до и после Альцгеймера. Последний арт-проект Уильяма Утермолена (William Utermohlen) (kulturologia.ru)</a>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <script src="script/slide02.js"></script>
 </body>
 </html>
