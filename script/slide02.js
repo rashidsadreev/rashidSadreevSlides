@@ -13,13 +13,10 @@ function portraitsAppear() {
 }
 setTimeout(portraitsAppear, 7000);
 
-
-
 const popup = document.querySelector('.popup');
 const popupBody = document.querySelector('.popup_body');
 const infoBtn = document.querySelector('.info_btn');
 const closeBtn = document.querySelector('.popup_close');
-
 
 function openPopup() {
   popup.classList.add('active');
